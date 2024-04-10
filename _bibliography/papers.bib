@@ -10,3 +10,64 @@
   abstract={Because of the restriction of complex field conditions and economic circumstance, seismic data is usually undersampled in the spatial domain, which needs to be interpolated to meet the requirements of following seismic data processing such as seismic imaging. We present a seismic data interpolation method via an end-to-end self-supervised deep learning framework. Specifically, a CNN is trained only using the observed undersampled seismic data itself. Furthermore, based on the equivariance of seismic data with respect to shift and undersampling, a training strategy that enforces both the measurement consistency and the equivalence is utilized. Experiments on regularly undersampled synthetic and field data interpolation show the effectiveness of our presented method in comparison with deep image prior (DIP) based interpolation method.},
   organization={SEG}
 }
+
+@article{picetti2022dippas,
+  title={DIPPAS: A deep image prior PRNU anonymization scheme},
+  author={Picetti, Francesco and Mandelli, Sara and Bestagini, Paolo and Lipari, Vincenzo and Tubaro, Stefano},
+  journal={EURASIP Journal on Information Security},
+  volume={2022},
+  number={1},
+  pages={2},
+  year={2022},
+  abstract={Source device identification is an important topic in image forensics since it allows to trace back the origin of an image. Its forensics counterpart is source device anonymization, that is, to mask any trace on the image that can be useful for identifying the source device. A typical trace exploited for source device identification is the photo response non-uniformity (PRNU), a noise pattern left by the device on the acquired images. In this paper, we devise a methodology for suppressing such a trace from natural images without a significant impact on image quality. Expressly, we turn PRNU anonymization into the combination of a global optimization problem in a deep image prior (DIP) framework followed by local post-processing operations. In a nutshell, a convolutional neural network (CNN) acts as a generator and iteratively returns several images with attenuated PRNU traces. By exploiting straightforward local post-processing and assembly on these images, we produce a final image that is anonymized with respect to the source PRNU, still maintaining high visual quality. With respect to widely adopted deep learning paradigms, the used CNN is not trained on a set of input-target pairs of images. Instead, it is optimized to reconstruct output images from the original image under analysis itself. This makes the approach particularly suitable in scenarios where large heterogeneous databases are analyzed. Moreover, it prevents any problem due to the lack of generalization. Through numerical examples on publicly available datasets, we prove our methodology to be effective compared to state-of-the-art techniques.},
+  publisher={Springer International Publishing Cham}
+}
+
+@inproceedings{xu2022interpolation,
+  title={Interpolation of missing shots via plug and play method with CSGs trained deep denoiser},
+  author={Xu, W and Lipari, V and Bestagini, P and Chen, W and Tubaro, S},
+  booktitle={83rd EAGE Annual Conference \& Exhibition},
+  volume={2022},
+  number={1},
+  pages={1--5},
+  year={2022},
+  abstract={Due to the restriction of complex field conditions, the trace interval in common receiver gathers (CRGs) is often larger than that in common shot gathers (CSGs). This impacts on the stability and precision of the following seismic data processing steps. To solve this issue, we present a Plug and Play method CSGs-trained deep denoiser for the interpolation of missing shots. Specifically, based on the spatial reciprocity theorem, instead of collecting or constructing training datasets, CSGs are used as the training dataset to train a deep convolutional neural network (CNN) Gaussian denoiser. This trained denoiser is then plugged into the alternating direction method of multiplier (ADMM) framework to solve the interpolation inverse problem. A numerical example on field data shows the effectiveness of the presented method in comparison to CNN-POCS method.},
+  organization={European Association of Geoscientists \& Engineers}
+}
+
+@article{xu2022intelligent,
+  title={Intelligent seismic deblending through deep preconditioner},
+  author={Xu, Weiwei and Lipari, Vincenzo and Bestagini, Paolo and Ravasi, Matteo and Chen, Wenchao and Tubaro, Stefano},
+  journal={IEEE Geoscience and Remote Sensing Letters},
+  volume={19},
+  pages={1--5},
+  year={2022},
+  abstract={Seismic deblending is an ill-posed inverse problem that involves counteracting the effect of a blending matrix derived from the shots’ position and firing time. In this letter, we propose a seismic deblending method based on so-called deep preconditioners. A convolutional autoencoder (AE) is first trained in a patch-wise fashion to learn an effective sparse representation of the common receiver gathers (CRGs) we aim to reconstruct. Then, the decoder branch of the trained AE is used as a nonlinear preconditioner for the deblending problem. Particularly, to avoid the explicit creation of a training dataset, we suggest to use the common shot gathers (CSGs) of the blended dataset itself to train the AE network, as they are not affected by incoherent blending noise. Numerical examples on synthetic and field datasets demonstrate the effectiveness of the proposed method.},
+  publisher={IEEE}
+}
+
+
+
+
+@inproceedings{picetti2021anti,
+  title={Anti-aliasing add-on for deep prior seismic data interpolation},
+  author={Picetti, Francesco and Lipari, Vincenzo and Bestagini, Paolo and Tubaro, Stefano},
+  booktitle={2021 IEEE International Conference on Image Processing (ICIP)},
+  pages={1979--1983},
+  year={2021},
+  abstract={Data interpolation is a fundamental step in any seismic processing workflow. Among machine learning techniques recently proposed to solve data interpolation as an inverse problem, Deep Prior paradigm aims at employing a convolutional neural network to capture priors on the data in order to regularize the inversion. However, this technique lacks of reconstruction precision when interpolating highly decimated data due to the presence of aliasing. In this work, we propose to improve Deep Prior inversion by adding a directional Laplacian as regularization term to the problem. This regularizer drives the optimization towards solutions that honor the slopes estimated from the interpolated data low frequencies. We provide some numerical examples to showcase the methodology devised in this manuscript, showing that our results are less prone to aliasing also in presence of noisy and corrupted data.},
+  organization={IEEE}
+}
+
+@inproceedings{lipari2021post,
+  title={Post-Stack Inversion with Uncertainty Estimation through Bayesian Deep Image Prior},
+  author={Lipari, Vicenzo and Picetti, Francesco and Bestagini, P and Tubaro, Stefano},
+  booktitle={82nd EAGE Annual Conference \& Exhibition},
+  volume={2021},
+  number={1},
+  pages={1--5},
+  year={2021},
+  abstract={
+We propose a Bayesian framework for post-stack inversion and uncertainty estimation based on deep priors. A Convolutional Neural Network acts like a nonlinear preconditioner to the inversion problem, capturing the priors from the data in its inner layers. At the same time, it also provides an estimate of the aleatoric uncertainty; this is achieved by minimizing a joint objective function in the CNN parameters space. Then, in a Bayesian framework, Montecarlo dropout is leveraged in order to sample the posterior and characterize the inherent uncertainty. Through synthetic examples we prove our methodology to be effective.},
+  organization={European Association of Geoscientists \& Engineers}
+}
