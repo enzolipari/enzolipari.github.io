@@ -1,12 +1,12 @@
 {
   "basics": {
-    "name": "Albert Einstein",
+    "name": "Vincenzo Lipari",
     "label": "Scientist",
     "image": "",
-    "email": "albert@einstein.de",
+    "email": "vlipari@ogs.it",
     "phone": "(912) 123-4567",
-    "url": "https://alshedivat.github.io/al-folio/",
-    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
+    "url": "https://enzolipari.github.io",
+    "summary": "Experienced researcher with a demonstrated history of working in the research industry. Skilled in Digital Signal Processing, Computer Vision, Exploration Seismology, Geophysical Imaging, Mathematical Modeling and Machine Learning. Enjoy working as a team member as well as independently. Strong interpersonal communication skills gained through a long experience of supervising students, managing a group of researchers and collaborating with industry partners.",
     "location": {
       "address": "2712 Broadway St",
       "postalCode": "CA 94115",
