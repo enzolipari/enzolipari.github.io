@@ -71,3 +71,47 @@
 We propose a Bayesian framework for post-stack inversion and uncertainty estimation based on deep priors. A Convolutional Neural Network acts like a nonlinear preconditioner to the inversion problem, capturing the priors from the data in its inner layers. At the same time, it also provides an estimate of the aleatoric uncertainty; this is achieved by minimizing a joint objective function in the CNN parameters space. Then, in a Bayesian framework, Montecarlo dropout is leveraged in order to sample the posterior and characterize the inherent uncertainty. Through synthetic examples we prove our methodology to be effective.},
   organization={European Association of Geoscientists \& Engineers}
 }
+
+@inproceedings{kong2020deep,
+  title={A deep prior convolutional autoencoder for seismic data interpolation},
+  author={Kong, Fantong and Lipari, V and Picetti, F and Bestagini, P and Tubaro, S},
+  booktitle={EAGE 2020 Annual Conference \& Exhibition Online},
+  volume={2020},
+  number={1},
+  pages={1--5},
+  year={2020},
+  abstract={A properly designed skip-connection convolutional autoencoder deep generator is able to capture the inner structure of shot gathers from subsampled seismic data without any pre-training procedure. The complete interpolated data can be reconstructed by feeding the autoencoder with multidimensional random noise and minimizing the mean squared error between generated and measured data. The performances achieved on synthetic and field data show the effectiveness of the proposed method.},
+  organization={European Association of Geoscientists \& Engineers}
+}
+
+@inproceedings{kong2020deep,
+  title={Deep prior-based seismic data interpolation via multi-res u-net},
+  author={Kong, Fantong and Picetti, Francesco and Lipari, Vincenzo and Bestagini, Paolo and Tubaro, Stefano},
+  booktitle={SEG International Exposition and Annual Meeting},
+  pages={D041S077R006},
+  year={2020},  
+  abstract={Interpolation of seismic data is an important pre-processing step in most seismic processing workflows. Through the deep image prior paradigm, it is possible to use Convolutional Neural Networks for seismic data interpolation without the costly and prone-to-overfitting training stage. The proposed method makes use of the multi-res U-net architecture as a deep prior to perform interpolation of time slices in order to reconstruct 3D shot gathers. Numerical examples on different corrupted synthetic datasets demonstrate the validity and effectiveness of the proposed approach.},
+  organization={SEG}
+}
+
+@inproceedings{picetti2020tool,
+  title={A tool for processing seismic images: Study on CycleGAN},
+  author={Picetti, F and Lombardi, F and Lipari, V and Bestagini, P and Tubaro, S and Lualdi, M},
+  booktitle={3rd Asia Pacific Meeting on Near Surface Geoscience \& Engineering},
+  volume={2020},
+  number={1},
+  pages={1--5},
+  year={2020},  
+  abstract={The advent of deep learning techniques had a huge impact in the geophysical community. Convolutional Neural Networks have been investigated for interpretation tasks and, lately, for seismic imaging problems traditionally approached with analytical methods. In this manuscript we employ a state-of-the-art CycleGAN for processing migrated images. We show an application scenario in which this post-processing machine transforms migrated images into corresponding reflectivity model of the subsurface. The proposed methodology achieves promising results in both synthetic and field data. The reconstructed reflectivity model exhibits a meaningful topology. However, the results suggest that computer-vision techniques need to be adapted to tackle the complexity of seismic imaging problems. For this purpose, we believe that geophysical knowledge can be embedded into more accurate network design.},
+  organization={European Association of Geoscientists \& Engineers}
+}
+
+@article{kong2020deep,
+  title={Deep prior-based unsupervised reconstruction of irregularly sampled seismic data},
+  author={Kong, Fantong and Picetti, Francesco and Lipari, Vincenzo and Bestagini, Paolo and Tang, Xiaoming and Tubaro, Stefano},
+  journal={IEEE Geoscience and Remote Sensing Letters},
+  volume={19},
+  pages={1--5},
+  abstract={Irregularity and coarse spatial sampling of seismic data strongly affect the performances of processing and imaging algorithms. Therefore, interpolation is a usual preprocessing step in most of the processing workflows. In this work, we propose a seismic data interpolation method based on the deep prior paradigm: an ad hoc convolutional neural network is used as a prior to solve the interpolation inverse problem, avoiding any costly and prone-to-overfitting training stage. In particular, the proposed method leverages a multiresolution U-Net with 3-D convolution kernels exploiting correlations in cubes of seismic data, at different scales in all directions. Numerical examples on different corrupted synthetic and field data sets show the effectiveness and promising features of the proposed approach.,
+  publisher={IEEE}
+}

@@ -3,7 +3,7 @@ layout: page
 permalink: /publications/
 title: Publications
 description: Selected publications. You can find a full list of publications in my Google Scholar.
-years: [2022, 2021]
+years: [2022, 2021, 2020]
 nav: true
 ---
 <!-- _pages/publications.md -->
